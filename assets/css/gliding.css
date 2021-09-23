@@ -1,0 +1,134 @@
+body {
+    background-color: #f0f0f0;
+    color: #444444;
+}
+
+.panel {
+    padding: 10px 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align:left;
+}
+
+.form-result {
+    display: none;
+}
+
+.handicap-calculator .panel {
+    padding: 0;
+}
+
+.handicap-calculator .panel h1 {
+    display: inline-block;
+    padding: 0 0 0 15px;
+}
+
+.handicap-calculator .panel p {
+    padding: 0 0 0 15px;
+    margin-bottom: 10px;
+}
+
+.handicap-calculator .glider {
+    padding-left: 15px;
+}
+
+.handicap-calculator .filter {
+    padding: 0 10px 10px 15px;
+}
+
+.handicap-calculator .filter input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.handicap-calculator .filter input:focus {
+    border: 1px solid #a7a7a7;
+}
+
+.handicap-calculator .filter button.sort {
+    padding:5px;
+    padding-right: 10px;
+    border-radius: 6px;
+    border:none;
+    display:inline-block;
+    color:#fff;
+    text-decoration: none;
+    background-color: #428bca;
+}
+
+.handicap-calculator .filter .sort:hover {
+    text-decoration: none;
+    background-color:#3276b1;
+}
+
+.handicap-calculator .filter .sort:focus {
+    outline:none;
+    background-color: #3276b1;
+}
+
+.handicap-calculator .filter .sort:after {
+    display:inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    content:"";
+    position: relative;
+    top:-10px;
+    right:-5px;
+}
+
+.handicap-calculator .filter .sort.asc:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    content:"";
+    position: relative;
+    top:4px;
+    right:-5px;
+}
+
+.handicap-calculator .filter .sort.desc:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    content:"";
+    position: relative;
+    top:-4px;
+    right:-5px;
+}
+
+@media screen and (max-width: 475px) {
+    .handicap-calculator .filter .search {
+        width: 100%;
+    }
+
+    .handicap-calculator .filter button.sort {
+        margin-top: 10px;
+    }
+}
+
+.welcome-link:hover {
+    text-decoration: none;
+}
+
+.welcome-link h3,
+.welcome-link p {
+    text-align:center;
+    margin-top: 10px;
+}
+
+.welcome-link p {
+    color: #000000;
+}
+
+.welcome-link .panel:hover {
+    background-color: #f4f4f4;
+}
