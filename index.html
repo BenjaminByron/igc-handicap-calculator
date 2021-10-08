@@ -16,21 +16,37 @@
 
 <form action="js/igcCalculator.js"></form>
     <label for="pilot-weight">Your Weight</label><br>
-    <input type="text" id="pilot-weight" name="pilot-weight"><br>
+    <input type="text" id="pilot-weight" name="pilot-weight" onkeyup="formChanged()" onchange="formChanged()">
+    <br>
     <label for="glider-empty">Glider Empty Weight :</label><br>
-    <input type="text" id="glider-empty" name="glider-empty">
+    <input type="text" id="glider-empty" name="glider-empty" onkeyup="formChanged()" onchange="formChanged()">
 <div>
 <p>Does your glider have winglets?</p>
+<br>
 <div>
-    <input type="radio" id="winglets-no" name="winglets" value="No Winglets">
+    <input type="radio" id="winglets-no" name="winglets" value="No Winglets" onchange="formChanged()">
     <label for="html">No Winglets</label><br>
-    <input type="radio" id="winglets-yes" name="winglets" value="Winglets">
+    <input type="radio" id="winglets-yes" name="winglets" value="Winglets" onchange="formChanged()">
     <label for="css">Winglets</label><br>
-
+<br>
     <input type="submit" value="Calculate"></form>
 
 </body>
 </html>
+<script>
+
+function formChanged() {
+var gliderType = document.getElementsByName("pilot-weight")[0].value;
+var pilotWeight = document.getElementsByName("pilot-weight")[0].value;
+var gliderWeight = document.getElementsByName("glider-empty")[0].value;
+var winglets = document.getElementsByName("winglets")[0].value;
+
+console.log(pilotWeight);
+console.log(winglets);
+}
+
+  
+</script>
 
 <script type="text/javascript" src="js/fetch.js"></script>
 <script type="text/javascript" src="js/igcCalculator.js"></script>
