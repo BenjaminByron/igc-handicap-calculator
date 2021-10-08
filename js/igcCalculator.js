@@ -63,7 +63,7 @@ console.log(calculatedHandicap)
         // Adjusts base handicap for winglets, if applicable
         calculatedHandicap += 0.004;
     }
-    document.getElementById('calculated-handicap').innerHTML=c(Math.round(calculatedHandicap * 100) / 100).toFixed(3);
+    document.getElementById('calculated-handicap').innerHTML=(Math.round(calculatedHandicap * 100) / 100).toFixed(3);
 
 
     console.log(calculatedHandicap.toFixed(3));
