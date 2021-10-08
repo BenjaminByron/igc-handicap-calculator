@@ -8,6 +8,9 @@
     <title>IGC Handicap Calculator</title>
 </head>
 <body>
+
+<script type="text/javascript" src="js/igcCalculator.js"></script>
+
     <h1>IGC Handicap Calculator</h1>
     <br>
     <p>Select Glider Type</p>
@@ -25,9 +28,9 @@
 
 <p>Does your glider have winglets?</p>
 <div>
-    <input type="radio" id="winglets-no" name="winglets" value="No Winglets" onchange="formChanged()" checked>
+    <input type="radio" id="winglets-no" name="winglets" value="fales" onchange="formChanged()" checked>
     <label for="html">No Winglets</label><br>
-    <input type="radio" id="winglets-yes" name="winglets" value="Winglets"  onchange="formChanged()">
+    <input type="radio" id="winglets-yes" name="winglets" value="true"  onchange="formChanged()">
     <label for="css">Winglets</label><br>
 <br>
     <input type="submit" value="Calculate"></form>
@@ -42,9 +45,9 @@ var pilotWeight = document.getElementsByName("pilot-weight")[0].value;
 var gliderWeight = document.getElementsByName("glider-empty")[0].value;
 var winglets = document.querySelector('input[name="winglets"]:checked').value;
 
-console.log(glider);
+console.log(gliderType);
 console.log(pilotWeight);
-console.log(gliderWeight);
+console.log(emptyWeight);
 console.log(winglets);
 }
 
@@ -52,7 +55,6 @@ console.log(winglets);
 </script>
 
 <script type="text/javascript" src="js/fetch.js"></script>
-<script type="text/javascript" src="js/igcCalculator.js"></script>
 
 </div>
 <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" id="footer">
