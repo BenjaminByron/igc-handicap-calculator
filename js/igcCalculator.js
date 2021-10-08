@@ -1,20 +1,8 @@
-{
-    var glider = {
-        gliderType: 'ASW 20f',
-        baseHandicap: 1.055,
-        referenceMass: 372,
-        emptyWeight: 276,
-        pilotWeight: 104,
-        winglets: true,
-    };
-}
+
 
 
 // TODO something
-if (glider.winglets) {
-    // Adjusts base handicap for winglets, if applicable
-    glider.baseHandicap += 0.004;
-}
+
 
 function flyingWeight(w1, w2) {
     // Function to determine glider's takeoff weight
@@ -30,11 +18,11 @@ function calculate(gliderType, pilotWeight, gliderWeight, winglets) {
 
     const referenceMass = parseInt(selectedGlider['ref mass'], 10);
 
-    console.log(referenceWeight);
 
     var pilotAndGlider = flyingWeight(gliderWeight, pilotWeight); // Calculate glider's takeoff weight
 
     var remainder = calculateRemainder(pilotAndGlider, referenceMass); // Number of kg over (+ve) or under (-ve) reference mass
+
 
     var useBaseHandicap = remainder > -10 && remainder <= 0; // Establishes whether handicap is in no-adjustment range
 
@@ -44,11 +32,11 @@ function calculate(gliderType, pilotWeight, gliderWeight, winglets) {
 
     if (useBaseHandicap) {
         // Assigns no-adjustment handicap
-        calculatedHandicap = selectedGlider.baseHandicap;
+        calculatedHandicap = parseFloat(selectedGlider['handicap'], 10);
     } else if (remainder > 0) {
         // Calculates and assigns increased handicap
         upwardAdjustment = Math.ceil(remainder / 10) * 0.004;
-        calculatedHandicap = selectedGlider.baseHandicap + upwardAdjustment;
+        calculatedHandicap = parseFloat(selectedGlider['handicap'], 10) + upwardAdjustment;
     } else if (!useBaseHandicap) {
         // Calculates decreaased handicap
         downwardAdjustment = Math.ceil(remainder / 10) * -0.003;
@@ -56,11 +44,17 @@ function calculate(gliderType, pilotWeight, gliderWeight, winglets) {
 
     if (downwardAdjustment >= 0.006) {
         // Sets lower handicap limit
-        calculatedHandicap = selectedGlider.baseHandicap - 0.006;
+        calculatedHandicap = parseFloat(selectedGlider['handicap'], 10) - 0.006;
     } else {
         // Assigns decreased handicap
-        calculatedHandicap = selectedGlider.baseHandicap - downwardAdjustment;
+        calculatedHandicap = parseFloat(selectedGlider['handicap'], 10) - downwardAdjustment;
     }
+
+    if (winglets === "true") {
+        // Adjusts base handicap for winglets, if applicable
+        calculatedHandicap += 0.004;
+    }
+    document.getElementById('calculated-handicap').innerHTML=calculatedHandicap;
 
     console.log(calculatedHandicap.toFixed(3));
 }
