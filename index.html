@@ -10,69 +10,31 @@
 <body>
     <h1>IGC Handicap Calculator</h1>
     <h5>Select Glider Type</h3>
+        <select id="glider-dropdown" name="glider">
+        </select>
+<div></div>
+
+<form action="js/igcCalculator.js"></form>
+    <label for="pilot-weight">Your Weight</label><br>
+    <input type="text" id="pilot-weight" name="pilot-weight"><br>
+    <label for="glider-empty">Glider Empty Weight :</label><br>
+    <input type="text" id="glider-empty" name="glider-empty">
+<div>
+<p>Does your glider have winglets?</p>
+<div>
+    <input type="radio" id="winglets-no" name="winglets" value="No Winglets">
+    <label for="html">No Winglets</label><br>
+    <input type="radio" id="winglets-yes" name="winglets" value="Winglets">
+    <label for="css">Winglets</label><br>
+
+    <input type="submit" value="Calculate"></form>
+
 </body>
 </html>
 
+<script type="text/javascript" src="js/fetch.js"></script>
+<script type="text/javascript" src="js/igcCalculator.js"></script>
 
-
-<script>
-// Script below runs the calculation  //
-
-{
-var glider = {
-    gliderType: "ASW 20f",
-    baseHandicap: 1.055,
-    referenceMass: 372,
-    emptyWeight: 276,
-    pilotWeight: 104,
-    winglets: true,
-      }
-    }
-
-if (glider.winglets) { // Adjusts base handicap for winglets, if applicable
-        glider.baseHandicap += 0.004;
-    }
-
-function flyingWeight(w1, w2) { // Function to determine glider's takeoff weight
-          return w1 + w2;
-      }
-    var pilotAndGlider = flyingWeight(glider.emptyWeight, glider.pilotWeight); // Calculate glider's takeoff weight
-
-function calculateRemainder(w1, w2) {
-          return w1 - w2;
-      }
-    var remainder = calculateRemainder(pilotAndGlider, glider.referenceMass); // Number of kg over (+ve) or under (-ve) reference mass
-
-    var useBaseHandicap = (remainder > -10) && (remainder <= 0); // Establishes whether handicap is in no-adjustment range
-
-var calculatedHandicap;
-var upwardAdjustment = 0
-var downwardAdjustment = 0;
-
-if (useBaseHandicap) { // Assigns no-adjustment handicap
-    calculatedHandicap = glider.baseHandicap;
-}
-
-else if (remainder > 0) { // Calculates and assigns increased handicap
-    upwardAdjustment = Math.ceil(remainder/10) * 0.004;
-    calculatedHandicap = glider.baseHandicap + upwardAdjustment;
-}
-
-else if (!useBaseHandicap) {  // Calculates decreaased handicap
-    downwardAdjustment = Math.ceil(remainder/10) * -0.003;
-}
-
-if (downwardAdjustment >= 0.006) { // Sets lower handicap limit
-    calculatedHandicap = glider.baseHandicap - 0.006;
-}
-
-else  {// Assigns decreased handicap
-    calculatedHandicap = glider.baseHandicap - downwardAdjustment;
-}
-
-console.log(calculatedHandicap.toFixed(3));
-
-</script>
 </div>
 <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" id="footer">
 <p>Created by <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ben Hughes</a></p>

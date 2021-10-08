@@ -1,362 +1,362 @@
 ﻿[
         {
-            "Handicap": "1.06",
-            "Type": "ASW 20B",
-            "Ref Mass": "372",
-            "Winglets Applicable": "y"
+            "handicap": "0.99",
+            "type": "ASW 15",
+            "ref mass": "352",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.06",
-            "Type": "ASW 20C",
-            "Ref Mass": "372",
-            "Winglets Applicable": "y"
+            "handicap": "0.99",
+            "type": "ASW 15b",
+            "ref mass": "352",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.055",
-            "Type": "ASW 20",
-            "Ref Mass": "372",
-            "Winglets Applicable": "y"
+            "handicap": "1",
+            "type": "ASW 19",
+            "ref mass": "362",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.055",
-            "Type": "ASW 20L",
-            "Ref Mass": "372",
-            "Winglets Applicable": "y"
+            "handicap": "1",
+            "type": "ASW 19B",
+            "ref mass": "362",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.055",
-            "Type": "ASW 20F",
-            "Ref Mass": "372",
-            "Winglets Applicable": "y"
+            "handicap": "1.055",
+            "type": "ASW 20",
+            "ref mass": "372",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.05",
-            "Type": "ASW 24",
-            "Ref Mass": "365",
-            "Winglets Applicable": "y"
+            "handicap": "1.06",
+            "type": "ASW 20B",
+            "ref mass": "372",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.05",
-            "Type": "ASW 24b",
-            "Ref Mass": "365",
-            "Winglets Applicable": "y"
+            "handicap": "1.06",
+            "type": "ASW 20C",
+            "ref mass": "372",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.045",
-            "Type": "Discus a",
-            "Ref Mass": "367",
-            "Winglets Applicable": "y"
+            "handicap": "1.055",
+            "type": "ASW 20F",
+            "ref mass": "372",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.045",
-            "Type": "Discus b",
-            "Ref Mass": "367",
-            "Winglets Applicable": "y"
+            "handicap": "1.055",
+            "type": "ASW 20L",
+            "ref mass": "372",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.045",
-            "Type": "Discus cs",
-            "Ref Mass": "367",
-            "Winglets Applicable": "y"
+            "handicap": "1.05",
+            "type": "ASW 24",
+            "ref mass": "365",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.045",
-            "Type": "Discus bT",
-            "Ref Mass": "367",
-            "Winglets Applicable": "y"
+            "handicap": "1.05",
+            "type": "ASW 24b",
+            "ref mass": "365",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.045",
-            "Type": "LS3",
-            "Ref Mass": "377",
-            "Winglets Applicable": "y"
+            "handicap": "1.02",
+            "type": "CB-15 Crystal",
+            "ref mass": "350",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.045",
-            "Type": "LS3-a",
-            "Ref Mass": "377",
-            "Winglets Applicable": "y"
+            "handicap": "1",
+            "type": "DG-100",
+            "ref mass": "385",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "Mosquito",
-            "Ref Mass": "368",
-            "Winglets Applicable": "y"
+            "handicap": "1",
+            "type": "DG-101",
+            "ref mass": "385",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "Mosquito b",
-            "Ref Mass": "368",
-            "Winglets Applicable": "y"
+            "handicap": "1.04",
+            "type": "DG-200",
+            "ref mass": "380",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "DG-200",
-            "Ref Mass": "380",
-            "Winglets Applicable": "y"
+            "handicap": "1.04",
+            "type": "DG-202",
+            "ref mass": "380",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "DG-202",
-            "Ref Mass": "380",
-            "Winglets Applicable": "y"
+            "handicap": "1.015",
+            "type": "DG-300",
+            "ref mass": "369",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "Mini Nimbus",
-            "Ref Mass": "368",
-            "Winglets Applicable": "y"
+            "handicap": "1.015",
+            "type": "DG-303",
+            "ref mass": "369",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "Genesis 2",
-            "Ref Mass": "366",
-            "Winglets Applicable": "y"
+            "handicap": "1.045",
+            "type": "Discus a",
+            "ref mass": "367",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "Speed Astir II",
-            "Ref Mass": "400",
-            "Winglets Applicable": "y"
+            "handicap": "1.045",
+            "type": "Discus b",
+            "ref mass": "367",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "Speed Astir IIb",
-            "Ref Mass": "400",
-            "Winglets Applicable": "y"
+            "handicap": "1.045",
+            "type": "Discus bT",
+            "ref mass": "367",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "Glasflugel 304",
-            "Ref Mass": "369",
-            "Winglets Applicable": "y"
+            "handicap": "1.045",
+            "type": "Discus cs",
+            "ref mass": "367",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "Glasflugel 304b",
-            "Ref Mass": "369",
-            "Winglets Applicable": "y"
+            "handicap": "1.04",
+            "type": "Genesis 2",
+            "ref mass": "366",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.04",
-            "Type": "HpH 304 cz",
-            "Ref Mass": "369",
-            "Winglets Applicable": "y"
+            "handicap": "1.04",
+            "type": "Glasflugel 304",
+            "ref mass": "369",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.035",
-            "Type": "SZD 55-1",
-            "Ref Mass": "350",
-            "Winglets Applicable": "y"
+            "handicap": "1.04",
+            "type": "Glasflugel 304b",
+            "ref mass": "369",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.03",
-            "Type": "LS7",
-            "Ref Mass": "353",
-            "Winglets Applicable": "y"
+            "handicap": "1.02",
+            "type": "H301 Libelle",
+            "ref mass": "315",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.025",
-            "Type": "Pik-20A",
-            "Ref Mass": "380",
-            "Winglets Applicable": "y"
+            "handicap": "1.005",
+            "type": "Hornet",
+            "ref mass": "343",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.025",
-            "Type": "LS4",
-            "Ref Mass": "356",
-            "Winglets Applicable": "y"
+            "handicap": "1.04",
+            "type": "HpH 304 cz",
+            "ref mass": "369",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.025",
-            "Type": "LS4a",
-            "Ref Mass": "356",
-            "Winglets Applicable": "y"
+            "handicap": "1.025",
+            "type": "HpH 304c",
+            "ref mass": "359",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.025",
-            "Type": "LS4b",
-            "Ref Mass": "356",
-            "Winglets Applicable": "y"
+            "handicap": "1",
+            "type": "Jantar Standard 1",
+            "ref mass": "364",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.025",
-            "Type": "HpH 304c",
-            "Ref Mass": "359",
-            "Winglets Applicable": "y"
+            "handicap": "1.01",
+            "type": "Jantar Standard 2",
+            "ref mass": "370",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.02",
-            "Type": "Pik-20B",
-            "Ref Mass": "370",
-            "Winglets Applicable": "y"
+            "handicap": "1.01",
+            "type": "Jantar Standard 3",
+            "ref mass": "370",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.02",
-            "Type": "CB-15 Crystal",
-            "Ref Mass": "350",
-            "Winglets Applicable": "y"
+            "handicap": "0.99",
+            "type": "LS1a",
+            "ref mass": "329",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.02",
-            "Type": "SZD 59 Acro",
-            "Ref Mass": "375",
-            "Winglets Applicable": "n"
+            "handicap": "0.99",
+            "type": "LS1b",
+            "ref mass": "329",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.02",
-            "Type": "H301 Libelle",
-            "Ref Mass": "315",
-            "Winglets Applicable": "y"
+            "handicap": "0.99",
+            "type": "LS1c",
+            "ref mass": "329",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.015",
-            "Type": "DG300",
-            "Ref Mass": "369",
-            "Winglets Applicable": "y"
+            "handicap": "0.99",
+            "type": "LS1d",
+            "ref mass": "329",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.015",
-            "Type": "DG303",
-            "Ref Mass": "369",
-            "Winglets Applicable": "y"
+            "handicap": "1.005",
+            "type": "LS1f",
+            "ref mass": "347",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.015",
-            "Type": "Pegase",
-            "Ref Mass": "361",
-            "Winglets Applicable": "y"
+            "handicap": "1.045",
+            "type": "LS3",
+            "ref mass": "377",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.015",
-            "Type": "Pik-20D",
-            "Ref Mass": "355",
-            "Winglets Applicable": "y"
+            "handicap": "1.045",
+            "type": "LS3a",
+            "ref mass": "377",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.01",
-            "Type": "Jantar Standard 2",
-            "Ref Mass": "370",
-            "Winglets Applicable": "y"
+            "handicap": "1.025",
+            "type": "LS4",
+            "ref mass": "356",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.01",
-            "Type": "Jantar Standard 3",
-            "Ref Mass": "370",
-            "Winglets Applicable": "y"
+            "handicap": "1.025",
+            "type": "LS4a",
+            "ref mass": "356",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.01",
-            "Type": "SZD-48-3M",
-            "Ref Mass": "365",
-            "Winglets Applicable": "y"
+            "handicap": "1.025",
+            "type": "LS4b",
+            "ref mass": "356",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.01",
-            "Type": "SZD-48-3M1 Brawo",
-            "Ref Mass": "365",
-            "Winglets Applicable": "y"
+            "handicap": "1.03",
+            "type": "LS7",
+            "ref mass": "353",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.005",
-            "Type": "Standard Cirrus 16.6m",
-            "Ref Mass": "350",
-            "Winglets Applicable": "n"
+            "handicap": "1.04",
+            "type": "Mini Nimbus",
+            "ref mass": "368",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.005",
-            "Type": "Hornet",
-            "Ref Mass": "343",
-            "Winglets Applicable": "y"
+            "handicap": "1.04",
+            "type": "Mosquito",
+            "ref mass": "368",
+            "winglets": "y"
         },
         {
-            "Handicap": "1.005",
-            "Type": "LS1f",
-            "Ref Mass": "347",
-            "Winglets Applicable": "y"
+            "handicap": "1.04",
+            "type": "Mosquito b",
+            "ref mass": "368",
+            "winglets": "y"
         },
         {
-            "Handicap": "1",
-            "Type": "ASW 19",
-            "Ref Mass": "362",
-            "Winglets Applicable": "y"
+            "handicap": "1.015",
+            "type": "Pegase",
+            "ref mass": "361",
+            "winglets": "y"
         },
         {
-            "Handicap": "1",
-            "Type": "ASW 19B",
-            "Ref Mass": "362",
-            "Winglets Applicable": "y"
+            "handicap": "1.025",
+            "type": "Pik-20A",
+            "ref mass": "380",
+            "winglets": "y"
         },
         {
-            "Handicap": "1",
-            "Type": "DG-100",
-            "Ref Mass": "385",
-            "Winglets Applicable": "y"
+            "handicap": "1.02",
+            "type": "Pik-20B",
+            "ref mass": "370",
+            "winglets": "y"
         },
         {
-            "Handicap": "1",
-            "Type": "DG-101",
-            "Ref Mass": "385",
-            "Winglets Applicable": "y"
+            "handicap": "1.015",
+            "type": "Pik-20D",
+            "ref mass": "355",
+            "winglets": "y"
         },
         {
-            "Handicap": "1",
-            "Type": "Jantar Standard 1",
-            "Ref Mass": "364",
-            "Winglets Applicable": "y"
+            "handicap": "1.04",
+            "type": "Speed Astir II",
+            "ref mass": "400",
+            "winglets": "y"
         },
         {
-            "Handicap": "1",
-            "Type": "Standard Cirrus 15m",
-            "Ref Mass": "345",
-            "Winglets Applicable": "y"
+            "handicap": "1.04",
+            "type": "Speed Astir IIb",
+            "ref mass": "400",
+            "winglets": "y"
         },
         {
-            "Handicap": "0.99",
-            "Type": "ASW 15",
-            "Ref Mass": "352",
-            "Winglets Applicable": "y"
+            "handicap": "1",
+            "type": "Standard Cirrus 15m",
+            "ref mass": "345",
+            "winglets": "y"
         },
         {
-            "Handicap": "0.99",
-            "Type": "ASW 15b",
-            "Ref Mass": "352",
-            "Winglets Applicable": "y"
+            "handicap": "1.005",
+            "type": "Standard Cirrus 16.6m",
+            "ref mass": "350",
+            "winglets": "n"
         },
         {
-            "Handicap": "0.99",
-            "Type": "LS1a",
-            "Ref Mass": "329",
-            "Winglets Applicable": "y"
+            "handicap": "0.99",
+            "type": "Standard Libelle H201",
+            "ref mass": "328",
+            "winglets": "y"
         },
         {
-            "Handicap": "0.99",
-            "Type": "LS1b",
-            "Ref Mass": "329",
-            "Winglets Applicable": "y"
+            "handicap": "0.99",
+            "type": "Standard Libelle H201b",
+            "ref mass": "328",
+            "winglets": "y"
         },
         {
-            "Handicap": "0.99",
-            "Type": "LS1c",
-            "Ref Mass": "329",
-            "Winglets Applicable": "y"
+            "handicap": "1.035",
+            "type": "SZD 55-1",
+            "ref mass": "350",
+            "winglets": "y"
         },
         {
-            "Handicap": "0.99",
-            "Type": "LS1d",
-            "Ref Mass": "329",
-            "Winglets Applicable": "y"
+            "handicap": "1.02",
+            "type": "SZD 59 Acro",
+            "ref mass": "375",
+            "winglets": "n"
         },
         {
-            "Handicap": "0.99",
-            "Type": "Standard Libelle H201",
-            "Ref Mass": "328",
-            "Winglets Applicable": "y"
+            "handicap": "1.01",
+            "type": "SZD-48-3M",
+            "ref mass": "365",
+            "winglets": "y"
         },
         {
-            "Handicap": "0.99",
-            "Type": "Standard Libelle H201b",
-            "Ref Mass": "328",
-            "Winglets Applicable": "y"
+            "handicap": "1.01",
+            "type": "SZD-48-3M1 Brawo",
+            "ref mass": "365",
+            "winglets": "y"
         }
     ]
