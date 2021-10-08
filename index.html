@@ -9,24 +9,25 @@
 </head>
 <body>
     <h1>IGC Handicap Calculator</h1>
-    <h5>Select Glider Type</h3>
-        <select id="glider-dropdown" name="glider">
+    <br>
+    <p>Select Glider Type</p>
+        <select id="glider-dropdown" name="glider" onchange="formChanged()">
         </select>
-<div></div>
+        <br>
 
 <form action="js/igcCalculator.js"></form>
     <label for="pilot-weight">Your Weight</label><br>
     <input type="text" id="pilot-weight" name="pilot-weight" onkeyup="formChanged()" onchange="formChanged()">
     <br>
-    <label for="glider-empty">Glider Empty Weight :</label><br>
+    <label for="glider-empty">Glider Empty Weight</label><br>
     <input type="text" id="glider-empty" name="glider-empty" onkeyup="formChanged()" onchange="formChanged()">
-<div>
+    <br>
+
 <p>Does your glider have winglets?</p>
-<br>
 <div>
-    <input type="radio" id="winglets-no" name="winglets" value="No Winglets" onchange="formChanged()">
+    <input type="radio" id="winglets-no" name="winglets" value="No Winglets" onchange="formChanged()" checked>
     <label for="html">No Winglets</label><br>
-    <input type="radio" id="winglets-yes" name="winglets" value="Winglets" onchange="formChanged()">
+    <input type="radio" id="winglets-yes" name="winglets" value="Winglets"  onchange="formChanged()">
     <label for="css">Winglets</label><br>
 <br>
     <input type="submit" value="Calculate"></form>
@@ -36,12 +37,14 @@
 <script>
 
 function formChanged() {
-var gliderType = document.getElementsByName("pilot-weight")[0].value;
+var gliderType = document.getElementsByName("glider")[0].value;
 var pilotWeight = document.getElementsByName("pilot-weight")[0].value;
 var gliderWeight = document.getElementsByName("glider-empty")[0].value;
-var winglets = document.getElementsByName("winglets")[0].value;
+var winglets = document.querySelector('input[name="winglets"]:checked').value;
 
+console.log(glider);
 console.log(pilotWeight);
+console.log(gliderWeight);
 console.log(winglets);
 }
 
