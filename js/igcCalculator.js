@@ -23,8 +23,6 @@ function calculate(gliderType, pilotWeight, gliderWeight, winglets) {
 
     var remainder = calculateRemainder(pilotAndGlider, referenceMass); // Number of kg over (+ve) or under (-ve) reference mass
 
-console.log(remainder)    
-
     var useBaseHandicap = remainder > -10 && remainder <= 0; // Establishes whether handicap is in no-adjustment range
 
     var calculatedHandicap;
@@ -39,31 +37,28 @@ console.log(remainder)
         upwardAdjustment = Math.ceil(remainder / 10) * 0.004;
         calculatedHandicap = ((parseFloat(selectedGlider['handicap'], 10) + upwardAdjustment));
 
-console.log(calculatedHandicap)
 
     } else if (!useBaseHandicap) {
         // Calculates decreaased handicap
         downwardAdjustment = Math.ceil(remainder / 10) * -0.003;
     }
-    console.log(calculatedHandicap)
-
 
     if (downwardAdjustment >= 0.006) {
         // Sets lower handicap limit
         calculatedHandicap = parseFloat(selectedGlider['handicap'], 10) - 0.006;
-    } else {
-        // Assigns decreased handicap
+    } else if (downwardAdjustment < 0.006 && remainder < 0) {
+       // Assigns decreased handicap
         calculatedHandicap = parseFloat(selectedGlider['handicap'], 10) - downwardAdjustment;
     }
-
-    console.log(calculatedHandicap)
 
 
     if (winglets === "true") {
         // Adjusts base handicap for winglets, if applicable
         calculatedHandicap += 0.004;
     }
+
     document.getElementById('calculated-handicap').innerHTML=calculatedHandicap.toFixed(3);
 
+    
     console.log(calculatedHandicap.toFixed(3));
 }
