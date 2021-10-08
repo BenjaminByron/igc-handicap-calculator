@@ -28,7 +28,7 @@
 
 <p>Does your glider have winglets?</p>
 <div>
-    <input type="radio" id="winglets-no" name="winglets" value="fales" onchange="formChanged()" checked>
+    <input type="radio" id="winglets-no" name="winglets" value="false" onchange="formChanged()" checked>
     <label for="html">No Winglets</label><br>
     <input type="radio" id="winglets-yes" name="winglets" value="true"  onchange="formChanged()">
     <label for="css">Winglets</label><br>
@@ -41,17 +41,19 @@
 
 function formChanged() {
 var gliderType = document.getElementsByName("glider")[0].value;
-var pilotWeight = document.getElementsByName("pilot-weight")[0].value;
-var gliderWeight = document.getElementsByName("glider-empty")[0].value;
+var pilotWeight = parseInt(document.getElementsByName("pilot-weight")[0].value, 10);
+var gliderWeight = parseInt(document.getElementsByName("glider-empty")[0].value, 10);
 var winglets = document.querySelector('input[name="winglets"]:checked').value;
 
 console.log(gliderType);
 console.log(pilotWeight);
-console.log(emptyWeight);
+console.log(gliderWeight);
 console.log(winglets);
+
+calculate(gliderType, pilotWeight, gliderWeight, winglets);
 }
 
-  
+
 </script>
 
 <script type="text/javascript" src="js/fetch.js"></script>
