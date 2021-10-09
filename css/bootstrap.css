@@ -179,8 +179,9 @@ h6, .h6 {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0 auto; 
+  width: 80vw;
+  text-align: center
 }
 
 abbr[title],
@@ -4143,8 +4144,8 @@ fieldset:disabled .btn {
 
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-right-radius: 8;
+  border-bottom-right-radius: 8;
   margin: 0 auto; 
   width: 80vw
   
@@ -4153,8 +4154,8 @@ fieldset:disabled .btn {
 .btn-group > .btn:nth-child(n + 3),
 .btn-group > :not(.btn-check) + .btn,
 .btn-group > .btn-group:not(:first-child) > .btn {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 8;
+  border-bottom-left-radius: 8;
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
   margin: 0 auto; 
