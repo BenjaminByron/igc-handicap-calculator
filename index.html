@@ -4,37 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>IGC Handicap Calculator</title>
 </head>
+
 <body>
 
-<script type="text/javascript" src="js/igcCalculator.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="handicap-search" class="panel panel-default"></div>
 
+<script type="text/javascript" src="js/igcCalculator.js"></script>
+<br>
     <h1>IGC Handicap Calculator</h1>
     <br>
-    <p>Select Glider Type</p>
-        <select id="glider-dropdown" name="glider" onchange="formChanged()">
-        </select>
-        <br>
+
 
 <form action="js/igcCalculator.js"></form>
-    <label for="pilot-weight">Your Weight</label><br>
-    <input type="text" id="pilot-weight" name="pilot-weight" onkeyup="formChanged()" onchange="formChanged()">
-    <br>
-    <label for="glider-empty">Glider Empty Weight</label><br>
-    <input type="text" id="glider-empty" name="glider-empty" onkeyup="formChanged()" onchange="formChanged()">
-    <br>
-
-<p>Does your glider have winglets?</p>
-<div>
-    <input type="radio" id="winglets-no" name="winglets" value="false" onchange="formChanged()" checked>
-    <label for="html">No Winglets</label><br>
-    <input type="radio" id="winglets-yes" name="winglets" value="true"  onchange="formChanged()">
-    <label for="css">Winglets</label><br>
+ 
+<div class="form-group">
+    <select id="glider-dropdown" class="form-select" name="glider" id="exampleSelect2" onchange="formChanged()">
+    </select>
+  </div>
 <br>
-<p>Your IGC Handicap is:</p>
-<div id='calculated-handicap'><div></form>
+<div class="form-floating mb-3">
+    <input type="text" class="form-control form-control-lg" placeholder="Pilot Weight (kg)" id="pilot-weight" name="pilot-weight" onkeyup="formChanged()" onchange="formChanged()">
+    <label for="pilot-weight">Pilot Weight (kg)</label>
+</div>
+<br>
+<div class="form-floating mb-3">
+    <input type="text" class="form-control form-control-lg" placeholder="Glider Empty Weight (kg)" id="glider-empty" name="glider-empty" onkeyup="formChanged()" onchange="formChanged()">
+    <label for="pilot-weight">Glider Empty Weight (kg)</label>
+</div>
+
+<br>
+
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="winglets" id="btnradio1" autocomplete="off" checked="" onchange="formChanged()" value="false">
+        <label class="btn btn-outline-primary" for="btnradio1">No Winglets</label>
+    <input type="radio" class="btn-check" name="winglets" id="btnradio2" autocomplete="off" onchange="formChanged()" value="true">
+        <label class="btn btn-outline-primary" for="btnradio2">Winglets</label>
+          </div>
+<br>
+<br>
+<br>
+
+        <div class="list-group">
+            <h1>
+            <a class="list-group-item" id='calculated-handicap'>
+            </a>
+            </h1>
+          </div>
+
+          </div>
+
+    </form>
 
 </body>
 </html>
@@ -42,8 +67,8 @@
 
 function formChanged() {
 var gliderType = document.getElementsByName("glider")[0].value;
-var pilotWeight = parseInt(document.getElementsByName("pilot-weight")[0].value, 10);
-var gliderWeight = parseInt(document.getElementsByName("glider-empty")[0].value, 10);
+var pilotWeight = parseFloat(document.getElementsByName("pilot-weight")[0].value, 10);
+var gliderWeight = parseFloat(document.getElementsByName("glider-empty")[0].value, 10);
 var winglets = document.querySelector('input[name="winglets"]:checked').value;
 
 console.log(gliderType);
@@ -54,13 +79,13 @@ console.log(winglets);
 calculate(gliderType, pilotWeight, gliderWeight, winglets);
 }
 
-
 </script>
 
 <script type="text/javascript" src="js/fetch.js"></script>
 
 </div>
-<div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" id="footer">
-<p>Created by <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ben Hughes</a></p>
+<br>
+<br>
+<h6>Created by <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ben Hughes</a></h6>
 </div>
 </html>
