@@ -11,19 +11,15 @@
 <body>
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div id="handicap-search" class="panel panel-default"></div>
 
 <script type="text/javascript" src="js/igcCalculator.js"></script>
-<br>
     <h1>IGC Handicap Calculator</h1>
     <br>
 
 
 <form action="js/igcCalculator.js"></form>
  
-<div class="form-group">
+<div class="form-group mb-2">
     <select id="glider-dropdown" class="form-select" name="glider" id="exampleSelect2" onchange="formChanged()">
     </select>
   </div>
@@ -32,21 +28,19 @@
     <input type="text" class="form-control form-control-lg" placeholder="Pilot Weight (kg)" id="pilot-weight" name="pilot-weight" onkeyup="formChanged()" onchange="formChanged()">
     <label for="pilot-weight">Pilot Weight (kg)</label>
 </div>
-<br>
+
 <div class="form-floating mb-3">
     <input type="text" class="form-control form-control-lg" placeholder="Glider Empty Weight (kg)" id="glider-empty" name="glider-empty" onkeyup="formChanged()" onchange="formChanged()">
     <label for="pilot-weight">Glider Empty Weight (kg)</label>
 </div>
 
-<br>
-
-<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+<div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group">
     <input type="radio" class="btn-check" name="winglets" id="btnradio1" autocomplete="off" checked="" onchange="formChanged()" value="false">
         <label class="btn btn-outline-primary" for="btnradio1">No Winglets</label>
     <input type="radio" class="btn-check" name="winglets" id="btnradio2" autocomplete="off" onchange="formChanged()" value="true">
         <label class="btn btn-outline-primary" for="btnradio2">Winglets</label>
           </div>
-<br>
+
 <br>
 <br>
 

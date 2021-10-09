@@ -87,7 +87,6 @@ footer{
 body {
   margin: 0;
   min-height: 100vh;
-  max-width: 400px;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -718,8 +717,6 @@ progress {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-.5 * var(--bs-gutter-x));
-  margin-left: calc( -.5 * var(--bs-gutter-x));
 }
 
 .row > * {
@@ -2386,9 +2383,9 @@ textarea.form-control-lg {
 
 .form-select {
   display: block;
-  padding: 0.75rem 2.5rem 0.75rem 1.5rem;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
   -moz-padding-start: calc(1.5rem - 3px);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
@@ -2696,7 +2693,7 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   height: 100%;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem 1rem 4rem;
   pointer-events: none;
   border: 1px solid transparent;
   -webkit-transform-origin: 0 0;
@@ -2704,6 +2701,11 @@ textarea.form-control-lg {
   transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  width: 80vw;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4088,7 +4090,6 @@ fieldset:disabled .btn {
 .btn-group-vertical {
   position: relative;
   display: -ms-inline-flexbox;
-  display: inline-flex;
   vertical-align: middle;
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
