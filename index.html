@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-original.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">  
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -17,7 +18,7 @@
     <div class="container">
 
 <script type="text/javascript" src="js/igcCalculator.js"></script>
-    <h1>IGC Handicap Calculator</h1>
+    <h1 class="center-text">IGC Handicap Calculator</h1>
     <br>
 
 
@@ -38,7 +39,7 @@
     <label for="pilot-weight">Glider Empty Weight (kg)</label>
 </div>
 
-<div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group">
+<div class="btn-group mb-2 center-buttons" role="group" aria-label="Basic radio toggle button group">
     <input type="radio" class="btn-check" name="winglets" id="btnradio1" autocomplete="off" checked="" onchange="formChanged()" value="false">
         <label class="btn btn-outline-primary" for="btnradio1">No Winglets</label>
     <input type="radio" class="btn-check" name="winglets" id="btnradio2" autocomplete="off" onchange="formChanged()" value="true">
@@ -48,8 +49,8 @@
 
 
         <div class="list-group">
-            <h1>
-            <a class="list-group-item" id='calculated-handicap'>
+            <h1 class="h1-no-padding center-text">
+            <a class="list-group-item " id='calculated-handicap'>
             </a>
             </h1>
           </div>
@@ -82,6 +83,8 @@ calculate(gliderType, pilotWeight, gliderWeight, winglets);
 
 </div>
 <br>
-<p><small>Handicap List Version: 15/04/2021</small></p>
-<h6>Created by <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ben Hughes</a></h6>
+<div class="center-text">
+    <p><small>Handicap List Version: 15/04/2021</small></p>
+    <h6>Created by <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ben Hughes</a></h6>
+</div>
 </html>
