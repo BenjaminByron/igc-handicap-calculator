@@ -1,0 +1,15 @@
+.center-buttons {
+    display: flex;
+}
+
+.center-text{
+     text-align: center;
+}
+
+.container {
+    margin-top: 20px
+}
+
+.h1-no-padding{
+    margin-bottom: 0;
+}
