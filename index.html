@@ -46,8 +46,6 @@
         <label class="btn btn-outline-primary" for="btnradio2">Winglets</label>
           </div>
 
-
-
         <div class="list-group">
             <h1 class="h1-no-padding center-text">
             <a class="list-group-item " id='calculated-handicap'>
@@ -62,12 +60,14 @@
 </body>
 </html>
 <script>
+  
 
 function formChanged() {
 var gliderType = document.getElementsByName("glider")[0].value;
 var pilotWeight = parseFloat(document.getElementsByName("pilot-weight")[0].value, 10);
 var gliderWeight = parseFloat(document.getElementsByName("glider-empty")[0].value, 10);
 var winglets = document.querySelector('input[name="winglets"]:checked').value;
+
 
 console.log(gliderType);
 console.log(pilotWeight);
