@@ -7,7 +7,7 @@ defaultOption.text = 'Select Your Club Class Weapon';
 dropdown.add(defaultOption);
 dropdown.selectedIndex = 0;
 
-const url = 'https://api.jsonbin.io/b/623206f706182767437894ef';
+const url = 'https://api.jsonbin.io/b/62320a9fa703bb67492d6960';
 
 let aircraftData;
 

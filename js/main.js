@@ -1,7 +1,7 @@
 const search = document.getElementById('search');
 const matchList = document.getElementById('match-list');
 
-// Search handica_list.json and filter
+// Search handicap_list.json and filter
 const searchGliders = async searchText => {
   const res = await fetch('../data/handicap_list.json');
   const gliders = await res.json();
