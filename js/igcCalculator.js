@@ -1,9 +1,3 @@
-
-
-
-// TODO something
-
-
 function flyingWeight(w1, w2) {
     // Function to determine glider's takeoff weight
     return w1 + w2;
